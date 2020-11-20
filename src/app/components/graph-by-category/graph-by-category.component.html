@@ -1,1 +1,18 @@
-<echarts (chartInit)="onChartInit($event)" [initOpts]="initOpts" [options]="options" class="graph"></echarts>
+<div style="text-align:center">
+    <div class="row ml-5">
+        <div class="col">
+            <div class="row">
+                <h4 class="card-title">
+                    Uso por Categoria
+                </h4>
+            </div>
+            <div class="row">
+                <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                    [yAxisLabel]="yAxisLabel">
+                </ngx-charts-bar-vertical>
+            </div>
+        </div>
+
+    </div>
+
+</div>

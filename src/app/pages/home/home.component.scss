@@ -2,24 +2,30 @@ main {
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    article {
-        display: flex;
-        justify-content: space-between;
-        background: #ffffff;
-        border-radius: 1.5rem;
+    div {
         margin: 1rem 1.5rem;
-        padding: 1.5rem;
-        box-shadow: 5px 8px 16px rgba(0, 0, 0, .15);
+        h2 {
+            font-weight: 700;
+        }
+    }
+    article {
+        margin: 1rem 1.5rem;
     }
     section {
         display: flex;
         width: 100%;
         * {
-            flex: 0.5;
-            margin: 1rem 1.5rem;
             background: #ffffff;
             border-radius: 1.5rem;
+            margin: 1rem 1.5rem;
             box-shadow: 5px 8px 16px rgba(0, 0, 0, .15);
+            &:nth-child(1) {
+                flex: 0.4;
+                margin-right: .5rem;
+            }
+            &:nth-child(2) {
+                flex: 0.6;
+            }
         }
     }
 }
