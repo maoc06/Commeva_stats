@@ -1,0 +1,20 @@
+<main>
+    <article>
+        <div *ngIf="beneficios">
+            <p>N° de Beneficios</p>
+            <h2>{{ beneficios.length }}</h2>
+        </div>
+        <div *ngIf="usoBeneficios">
+            <p>N° de Beneficios Usados</p>
+            <h2>{{ usoBeneficios.length }}</h2>
+        </div>
+        <div *ngIf="asociados">
+            <p>N° de Asociados</p>
+            <h2>{{ asociados.length }}</h2>
+        </div>
+    </article>
+    <section>
+        <app-top-benefits></app-top-benefits>
+        <app-graph-by-category></app-graph-by-category>
+    </section>
+</main>
